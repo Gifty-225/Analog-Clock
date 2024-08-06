@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.clock {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 2px solid black;
+    position: relative;
+    margin: 80px auto;
+}
+
+.center-of-clock {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.seconds-hand, .minutes-hand, .hours-hand {
+    position: absolute;
+    height: 50%;
+    inset: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transform-origin: bottom;
+}
+
+.seconds-hand, .minutes-hand, .hours-hand {
+    display: block;
+    width: 0;
+    background-color: transparent; /* Default to transparent, specific colors applied below */
+}
+
+.seconds-hand {
+    width: 1px;
+    padding-top: 20px;
+    background-color: orangered;
+}
+  
+.minutes-hand {
+    width: 3px;
+    padding-top: 10px;
+    background-color: greenyellow;
+}
+  
+.hours-hand {
+    width: 5px;
+    padding-top: 30px;
+    background-color: lightblue;
+}
+
+.clock-background {
+    position: absolute;
+    inset: 0;
+    transform: scale(1.2);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
